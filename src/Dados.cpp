@@ -82,7 +82,7 @@ std::pair<bool, std::vector<int>> Dados::Scaning(string* str){
     
     it = a.second.end() - 1;
     //cout << *it << endl;
-    if(*it > porc) {
+    if(it->first) {
       name = i->Retorna_nome();
       dados_pessoais_suspeito = i->Retorna_dados_pessoais();
       check = true;
